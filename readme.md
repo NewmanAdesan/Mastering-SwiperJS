@@ -13,3 +13,4 @@ we can interact the parent container(swiper UI), the pagination, the navigation,
     - via properties
     - via methods
     - via events
+    - via css variables/ css classes

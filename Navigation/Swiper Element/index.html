@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiperJS Navigation with the Swiper Custom Element</title>
+    
+    <!--
+        STEP 3
+    -->
+    <style>
+        html,
+        body {
+        position: relative;
+        height: 100%;
+        }
+
+        body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        }
+
+        swiper-container {
+        width: 100%;
+        height: 100%;
+        }
+
+        swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--
+        STEP 2 & STEP 4
+    -->
+    <swiper-container class="mySwiper" navigation="true">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+    </swiper-container>
+
+
+    <!--
+        STEP 1
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+</body>
+</html>
+
+<!--
+    STEPS
+        step 1
+            - add the swiper's custom element script CDN
+
+        step 2
+            - add the swiper-custom-element for the swiper container and the swiper slides only
+
+        step 3
+            - add custom styling 
+                * make the swiper container have a width/height of 100%
+                * make the each slide have a particular font setting & a particular flex layout
+
+        step 4
+            - add the navigation attribute set to "true" to the slider-container to enable slide-change functionality on the navigation button click
+-->
