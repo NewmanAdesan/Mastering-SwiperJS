@@ -36,7 +36,7 @@ PARAMETERS
 * a11y (accessibility)
 * allowSlideNext/allowSlidePrev/allowTouchMove
 * autoHeight
-* autoplay/cardEffect/creativeEffect/controller/coverflowEffect/cubeEffect/cssMode/fadeEffect/flipEffect/freeMode/grid/hashNavigation/history (special-effect-based---modules)
+* autoplay/cardEffect/creativeEffect/controller/coverflowEffect/cubeEffect/cssMode/fadeEffect/flipEffect/freeMode/grid/hashNavigation/history/keyboard/navigation/pagination/parallax (special-effect-based---modules)
 * breakpoint/breakpointBase
 * centerInsufficientSlides/centeredSlides/centeredSlidesBounds
 * containerModifierClass
@@ -50,7 +50,18 @@ PARAMETERS
 * height (**technically-interesting)
 * init (control-swiper-instance-initialization)
 * initialSlide
-* injectStyles/injectStylesUrls
+* injectStyles/injectStylesUrls (encapsulate-css-into-swiper-web-component)
+* lazyPreloadPrevNext/lazyPreloaderClass (**useful-and-interesting**)
+* longSwipes/longSwipesMs/longSwipesRatio
+* loop/loopAddBlankSlides/loopAdditionalSlides/loopPreventsSliding
+* maxBackfaceHiddenSlides (**technically-interesting**)
+* modules
+* mousewheel
+* noSwiping/noSwipingClass/noSwipingSelector
+* nested/normalizeSlideIndex (**no-idea**)
+* observer/observeParents/observeSlideChildren (observer-functionality)
+* oneWayMovement
+* on/onAny/passiveListeners (event-based)
 
 <br />
 
@@ -89,6 +100,18 @@ with this html below and the createElements property set to true, you can easily
 FOCUSABLE-ELEMENT PARAMETER: iMPORTANT FOR INTERACTIVE FORM ELMENTS OR MEDIA CONTROLS INSIDE THE SWIDER <br>
 such that we can set some html elements in our swiper element to disable the slide changes when they are focused on. check the docs for the default-value of this parameter
 
+<br />
+
+OBSERVER-OBSERVESLIDECHILDREN-OBSERVEPARENTS PARAMETER: THE SWIPER'S OBSERVER FUNCTIONALITY <br >
+we can specify that our swiper instance/component should reinitialize when changes(style-or-script) occur 
+* to the swiper-html-element itself (e.g., adding or removing slides)
+* to the swiper's parent element (e.g., visibility toggles or style changes to the container)
+* to the swiper's individual slide element (e.g., content inside a slide is dynamically changed)
+
+<br />
+
+OTHER NOTES <br>
+* the mutation observer api
 
 
 
