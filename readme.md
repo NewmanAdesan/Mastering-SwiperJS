@@ -59,9 +59,12 @@ PARAMETERS
 * mousewheel
 * noSwiping/noSwipingClass/noSwipingSelector
 * nested/normalizeSlideIndex (**no-idea**)
-* observer/observeParents/observeSlideChildren (observer-functionality)
+* observer/observeParents/observeSlideChildren/resizeObserver (observer-functionality)
 * oneWayMovement
 * on/onAny/passiveListeners (event-based)
+* preventClicks/preventClicksPropagation/preventInteractionOnTransition (**basic-interesting**)
+* resistance/resistanceRatio (pull-back-effect-on-first-&-last-slide)
+* rewind 
 
 <br />
 
@@ -110,8 +113,13 @@ we can specify that our swiper instance/component should reinitialize when chang
 
 <br />
 
+REWIND <br>
+paginating/navigating forward on the last-slide leads to the first-slide & paginating/navigating backward on the first-slide leads to the last-slide. By default this parameter is set to FALSE.
+
+<br />
+
 OTHER NOTES <br>
-* the mutation observer api
+* mdn-docs---references---web-apis---mutation-observer-api
 
 
 
