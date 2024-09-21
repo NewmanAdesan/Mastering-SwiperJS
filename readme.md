@@ -23,6 +23,7 @@ we can interact the parent container(swiper UI), the pagination, the navigation,
 
 
 ---------  SEPTEMBER 2024  ------------------------------------------------------------
+
 4 Basic ways to configure our SWIPER's Functionality/Behaviour
 * PARAMETERS
 * METHODS & PROPERTIES
